@@ -20,7 +20,7 @@ def load_data_from_csv(request):
 
                     class_obj, created = Class.objects.get_or_create(
                         Class_Id=row.get('Class_Id', None),
-                        defaults={'class_name': row.get('Class')}
+                        defaults={'Class_name': row.get('Class_name')}
                     )
 
                     student_obj, created = Student.objects.get_or_create(
